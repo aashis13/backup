@@ -31,8 +31,8 @@ int main()
     cout << "Area of desk: " << desk.Area() << endl;
 
     cout << "Perimeter of book: " << book.Perimeter() << endl;
-    cout << "Perimeter of book: " << laptop.Perimeter() << endl;
-    cout << "Perimeter of book: " << desk.Perimeter() << endl;
+    cout << "Perimeter of laptop: " << laptop.Perimeter() << endl;
+    cout << "Perimeter of desk: " << desk.Perimeter() << endl;
 
     return 0;
 }

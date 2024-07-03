@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-class Rectangle // class = pascal case, function/menthod, camel case(EG: Set data),train case(EG: length_i)
+class Rectangle
 {
 private:
     int length, width;
@@ -48,8 +48,8 @@ int main()
     cout << "Area of desk: " << desk.Area() << endl;
 
     cout << "Perimeter of book: " << book.Perimeter() << endl;
-    cout << "Perimeter of book: " << laptop.Perimeter() << endl;
-    cout << "Perimeter of book: " << desk.Perimeter() << endl;
+    cout << "Perimeter of laptop: " << laptop.Perimeter() << endl;
+    cout << "Perimeter of desk: " << desk.Perimeter() << endl;
 
     return 0;
 }

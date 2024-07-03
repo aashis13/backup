@@ -25,5 +25,9 @@ public:
 };
 int main()
 {
-    
+    rectangle r1(10, 5);
+    rectangle r2(20, 10);
+    cout << "Area of r1: " << r1.area() << endl;
+    cout << "Area of r2: " << r2.area() << endl;
+    return 0;
 }

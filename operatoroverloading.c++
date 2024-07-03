@@ -1,32 +1,42 @@
 #include <iostream>
+
 using namespace std;
-class Distance
+
+class Rectangle
 {
 private:
-    int feet, inches;
+    int length, breadth;
 
 public:
-    Distance() {}
-    Distance(int f, int i)
-    {
-        feet = f;
-        inches = i;
-    }
-    void addddistance(Distance d1, Distance d2)
-    {
-        feet = d1.feet + d2.feet;
-        inches = d1.inches + d2.inches;
-        feet = feet + inches / 12;
-        inches = inches % 12;
-    }
-    void display()
-    {
-        cout << "Feet: " << feet << " Inches: " << inches << endl;
-    }
+    Rectangle();
+    Rectangle(int l, int b);
+    void operator++(int);
+    void display();
 };
 int main()
 {
-    Distance d1(10, 9), d2(7, 10), d3;
-    cout<<"Distance 1: ";
-    
+    int l, b;
+    cout << "Enter the length and breadth of the rectangle: ";
+    cin >> l >> b;
+    Rectangle r1(l, b), r2(l, b);
+    r1++;
+    r1.display();
+    r2++;
+    r2.display();
+    return 0;
+}
+
+Rectangle::Rectangle(int l, int b)
+{
+    length = l;
+    breadth = b;
+}
+void Rectangle ::operator++(int)
+{
+    length++;
+    breadth++;
+}
+void Rectangle ::display()
+{
+    cout << "Length: " << length << " Breadth: " << breadth << endl;
 }
