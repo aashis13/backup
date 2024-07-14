@@ -10,24 +10,27 @@ public:
     {
         code = 0;
         price = 0;
+        cout << "Default Constructor" << endl;
     }
 
     Item(int c, int p) // Parameterized Constructor
     {
         code = c;
         price = p;
+        cout << "Parameterized Constructor" << endl;
     }
 
     Item(const Item &x) // Copy Constructor
     {
         code = x.code;
         price = x.price;
+        cout << "Copy Constructor" << endl;
     }
 
     ~Item()
     {
         cout << "Function is executed automatically just before the lifetime of an object finishes" << endl;
-        cout << "Memory is deallocated!" << endl;
+        cout << "memory is deallocated!!" << endl;
     }
 
     void display()

@@ -1,16 +1,16 @@
 #include <iostream>
-#include <string>
-
+//#include <string>
+using namespace std;
 class Account
 {
 private:
     int account_no;
-    std::string account_holder_name;
+    string account_holder_name;
     double balance;
     double minimum_balance;
 
 public:
-    void create_account(int acc_no, const std::string &holder_name, double initial_balance, double min_balance)
+    void create_account(int acc_no, const string &holder_name, double initial_balance, double min_balance)
     {
         account_no = acc_no;
         account_holder_name = holder_name;
@@ -21,7 +21,7 @@ public:
     void deposit(double amount)
     {
         balance += amount;
-        std::cout << "Amount deposited successfully.\n";
+        cout << "Amount deposited successfully.\n";
     }
 
     void withdraw(double amount)
@@ -29,19 +29,19 @@ public:
         if (balance - amount >= minimum_balance)
         {
             balance -= amount;
-            std::cout << "Amount withdrawn successfully.\n";
+            cout << "Amount withdrawn successfully.\n";
         }
         else
         {
-            std::cout << "Insufficient balance. Withdrawal failed.\n";
+            cout << "Insufficient balance. Withdrawal failed.\n";
         }
     }
 
     void balance_inquiry()
     {
-        std::cout << "Account No: " << account_no << "\n";
-        std::cout << "Account Holder Name: " << account_holder_name << "\n";
-        std::cout << "Balance: " << balance << "\n";
+        cout << "Account No: " << account_no << "\n";
+        cout << "Account Holder Name: " << account_holder_name << "\n";
+        cout << "Balance: " << balance << "\n";
     }
 };
 
