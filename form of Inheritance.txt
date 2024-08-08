@@ -1,0 +1,24 @@
+Form of inheritance:
+1. Single inheritance
+syntax:
+class A
+{}
+class B: public A
+{}
+2. Multiple inheritance
+syntax:
+class c : public A, public B
+{}
+3. Multilevel inheritance
+syntax:
+class B: public A
+{}
+class C: public B
+{}
+4. Hierarchical inheritance
+syntax:
+class B : public A
+{}
+class C : public A
+{}
+5. Hybrid inheritance 

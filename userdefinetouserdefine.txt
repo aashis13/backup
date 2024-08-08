@@ -1,0 +1,4 @@
+userdefine to userdefine
+1. using constructor / function / Routine
+2. using overloaded Cast operator function / Routine
+3. Source and destination

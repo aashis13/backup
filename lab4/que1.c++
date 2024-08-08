@@ -27,13 +27,13 @@ public:
 int main()
 {
     rectangle r1(5, 6);
-    cout << "Rectangle r1\n" << endl;
+    cout << "Rectangle r1\n"<< endl;
     r1.display();
     ++r1;
     r1.display();
     cout << "----------------------" << endl;
     rectangle r2(0, 0);
-    cout << "Rectangle r2\n" << endl;
+    cout << "Rectangle r2\n"<< endl;
     r2.display();
     ++r2;
     r2.display();
