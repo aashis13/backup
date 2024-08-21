@@ -1,0 +1,12 @@
+Pure Virtual Function
+Vitrual function that ends with '=0'
+Virtual voidshow() = 0; 
+- No defination and declared in Base class.
+
+There are two type of class:
+Abstract class and Concrete class
+
+Abstract class: Class that have at least one pure Virtual function.
+- At least one pure Virtual function.
+- cannot be instantiated/cannot create object but able tp create pointer.
+- Designed for base class.
