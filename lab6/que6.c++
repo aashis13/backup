@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 class Shape
 {
 protected:
@@ -23,7 +23,7 @@ public:
     void area()
     {
         double area = 0.5 * length * width;
-        std::cout << "Area of the triangle: " << area << std::endl;
+        cout << "Area of the triangle: " << area << endl;
     }
 };
 
@@ -39,7 +39,7 @@ public:
     void area()
     {
         double area = length * width;
-        std::cout << "Area of the rectangle: " << area << std::endl;
+        cout << "Area of the rectangle: " << area << endl;
     }
 };
 
